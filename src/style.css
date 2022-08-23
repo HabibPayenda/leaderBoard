@@ -1,3 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.rightContainerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.recentScores {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.refresh {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #444;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  list-style: none;
+  height: 30px;
+  background-color: #eee;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  width: 90%;
+  height: 100%;
+}
+
+.addScore {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.scoreInput {
+  height: 30px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 3px 6px;
+}
+
+.submit {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #444;
+  margin-top: 10px;
+  align-self: flex-end;
 }
