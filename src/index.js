@@ -1,12 +1,12 @@
 import './style.css';
+import getAllScores from './modules/api.js';
 
-function component() {
-  const element = document.createElement('div');
+const ul = document.getElementById('ul');
+const refresh = document.getElementById('refresh');
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = '';
+getAllScores();
 
-  return element;
-}
-
-document.body.appendChild(component());
+refresh.addEventListener('click', () => {
+  ul.innerHTML = '';
+  getAllScores();
+});
